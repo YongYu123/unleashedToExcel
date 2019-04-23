@@ -1,0 +1,10 @@
+{% import '_includes/forms' as forms %}
+
+{{ forms.checkboxGroupField({
+	label : 'Allowed Sections' | t('promo-box-field'),
+	instructions : 'The sections that may be chosen for this field.' | t('promo-box-field'),
+	id : 'whitelistedSections',
+	name : 'whitelistedSections',
+	values: field.whitelistedSections,
+	options : sections
+}) }}

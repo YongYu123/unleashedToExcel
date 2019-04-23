@@ -1,0 +1,14 @@
+{
+  "name": "crafty-coffee",
+  "version": "1.0.0",
+  "description": "Crafty Coffee - a sample site for learning Craft CMS with Mijingo.com",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-scss": "^1.4.0"
+  },
+  "devDependencies": {
+    "foundation": "^4.2.1-1",
+    "gulp-compass": "^2.1.0"
+  }
+}

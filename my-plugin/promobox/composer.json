@@ -1,0 +1,45 @@
+{
+    "name": "pluginspromobox/promo-box",
+    "description": "promobox test",
+    "type": "craft-plugin",
+    "minimum-stability": "dev",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "promobox"
+    ],
+    "support": {
+        "docs": "https://github.com/YongYu123/promo-box/blob/master/README.md",
+        "issues": "https://github.com/YongYu123/promo-box/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YongYu",
+            "homepage": "https://github.com/YongYu123"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+        
+    },
+    "autoload": {
+        "psr-4": {
+          "pluginspromobox\\promobox\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "PromoBox",
+        "handle": "promo-box",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://raw.githubusercontent.com/YongYu123/promo-box/master/CHANGELOG.md",
+        "components": {
+            "promoBoxService": "pluginspromobox\\promobox\\services\\PromoBoxService"
+        },
+        "class": "pluginspromobox\\promobox\\PromoBox"
+    }
+}

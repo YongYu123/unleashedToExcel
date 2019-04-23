@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTDXHTML1.0Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{subject}</title>
+            <style type="text/css">
+                @import url('https://fonts.googleapis.com/css?family=Lato:400');
+                /* Take care of image borders and formatting */
+                img {
+                    max-width: 600px;
+                    outline: none;
+                    text-decoration: none;
+                    -ms-interpolation-mode: bicubic;
+                }
+                a {
+                    text-decoration: none;
+                    border: 0;
+                    outline: none;
+                }
+                a img {
+                    border: none;
+                }
+                /* General styling */
+                h1,
+                h2,
+                h3,
+                td {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-weight: 400;
+                }
+                body {
+                    -webkit-font-smoothing: antialiased;
+                    -webkit-text-size-adjust: none;
+                    width: 100%;
+                    height: 100%;
+                    color: #37302d;
+                    background: #ffffff;
+                }
+                h1,
+                h2,
+                h3 {
+                    padding: 0;
+                    margin: 0;
+                    color: #ffffff;
+                    font-weight: 400;
+                }
+                h3 {
+                    color: #ef6c00;
+                    font-size: 24px;
+                }
+            </style>
+            <style type="text/css" media="screen">
+                @media screen {
+                    /* Thanks Outlook 2013! http://goo.gl/XLxpyl*/
+                    h1,
+                    h2,
+                    h3,
+                    td {
+                        font-family: 'Lato', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+                    }
+                }
+            </style>
+            <style type="text/css" media="only screen and (max-width: 480px)">
+                /* Mobile styles */
+                @media only screen and (max-width: 480px) {
+                    table[class="w320"] {
+                        width: 320px !important;
+                    }
+                    table[class="w300"] {
+                        width: 300px !important;
+                    }
+                    table[class="w290"] {
+                        width: 290px !important;
+                    }
+                    td[class="w320"] {
+                        width: 320px !important;
+                    }
+                    td[class="mobile-center"] {
+                        text-align: center !important;
+                    }
+                    td[class="mobile-padding"] {
+                        padding-left: 20px !important;
+                        padding-right: 20px !important;
+                        padding-bottom: 20px !important;
+                    }
+                    [class="mobile-block"] {
+                        width: 100% !important;
+                        display: block !important;
+                    }
+                }
+            </style>
+            <style>
+            .row{
+              display:flex;
+            }
+            .row.col{
+              flex:1;
+            }
+            .nav-item{
+              display:flex;
+              flex:1;
+              text-align:center;
+            }
+            </style>
+        </head>
+         
+
+     <body>
+ <div class="row" style="background-color: rgba(0,0,0,.7); min-height: 100px">
+                <div class="col">
+                  <div class="d-flex flex-wrap">
+                    <div class="my-auto mr-2">
+                      <img alt="trends logo white" src="Trends_logo.png" style="height: 40px" />
+                    </div>
+                    <div class="my-auto">
+                      <h1 class="title text-white pt-2 m-0"> Title </h1>
+                    </div>
+                  </div>
+                  <div class="m-1 mt-2">
+                    <span class="subtitle-hub text-white font-weight-bold"> subtitle </span>
+                  </div>
+               
+                      <div class="m-1 d-flex align-content-sm-start">
+                      </div>
+                 
+                </div>
+                <div class="col">
+         <div class="card rounded-0 m-0 p-0 h-100 bg-primary" style= "background: linear-gradient(60deg, rgb(255, 167, 38), rgb(245, 124, 0));" >
+            <div class="card-body">
+            <span>Proudly sponsored by</span>
+            
+              <a target="_blank" href={{ craft.linkservice.getLinkBySponsorship(entry,{"type": "sponsorship-header"})}}>
+              <img src="{{entry.sponsorshipLogoImage[0].getBackgroundFilename({type:'sponsporlogo'})}}" style= "width:65%;">
+            </a>
+         
+              <a target="_blank" href={{ craft.linkservice.getLinkBySponsorship(entry,{"type": "sponsorship-header"})}}>
+              <h4 class="card-title my-0">{{ entry.sponsorshipTitle }}</h4>
+            </a>
+            <div class="card-text my-0 clean-p white-p">{{ entry.sponsorshipSubtitle }}</div>
+            {{ craft.linkservice.getLinkBySponsorship(entry,{"full_tag": true, "type": "sponsorship-header","class": "btn btn-link btn-sm btn-white float-right"}) | raw }}
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+      <li class="nav-item {{marginleft}}">
+    <a target="_blank" href="https://www.facebook.com/TrendsIdeas" class="nav-link px-1 {{color}}"><i class="fa fa-facebook-f" style="font-size: 0.9rem"></i></a>
+      </li>
+      <li class="nav-item">
+    <a target="_blank" href="http://twitter.com/Trendsideas" class="nav-link px-1  {{color}}"><i class="fa fa-twitter" style="font-size: 0.9rem"></i></a>
+      </li>
+      <li class="nav-item">
+    <a target="_blank" href="https://nz.pinterest.com/trendsideas/" class="nav-link px-1 {{color}}"><i class="fa fa-pinterest" style="font-size: 0.9rem"></i></a>
+      </li>
+      <li class="nav-item">
+    <a target="_blank" href="https://www.linkedin.com/company/trends-publishing/" class="nav-link px-1 {{color}}"><i class="fa fa-linkedin" style="font-size: 0.9rem"></i></a>
+      </li>
+
+      <div class="col">
+        <ul class="navbar-nav d-flex flex-row justify-content-center"></ul>
+      </div>
+      <div class="row p-2">
+        <div class="col text-center small">
+          <a href="tel:095715700" style="color: inherit;"
+            ><i class="fa fa-phone"></i> 09 571 5700</a
+          >
+          |
+          <a href="mailto:info@trendsideas.com" style="color: inherit;"
+            ><i class="fa fa-envelope"></i> info@trendsideas.com</a
+          >
+          |
+          <a href="https://trendsideas.com" style="color: inherit;"
+            ><i class="fa fa-globe"></i> trendsideas.com</a
+          >
+          |
+          <a
+            href="https://www.google.com/maps/place/49A+Main+Hwy,+Ellerslie,+Auckland+1051/@-36.8968673,174.804813,19z/data=!3m1!4b1!4m5!3m4!1s0x6d0d48e570b6a865:0xf03498123e8af173!8m2!3d-36.8968684!4d174.8053602"
+            target="_blank"
+            style="color: inherit;"
+            ><i class="fa fa-building"></i> 49A Main Highway Ellerslie, Auckland
+            1051 New Zealand</a
+          >
+        </div>
+      </div>
+    </footer>
+  
+             
+    </body>
+</html>
+                

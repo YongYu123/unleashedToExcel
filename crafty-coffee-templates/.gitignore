@@ -1,0 +1,5 @@
+.gulp-scss-cache
+.sass-cache
+app/app/assets/temp
+node_modules
+

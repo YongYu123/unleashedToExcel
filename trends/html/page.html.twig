@@ -1,0 +1,102 @@
+{% extends ":"~template~":base.html.twig" %}
+
+{% block content %}
+    <div data-section-wrapper="1" style="border-bottom: 3px solid #ef6c00;">
+        <center>
+            <table data-section="1" cellspacing="0" cellpadding="0" width="" class="w320">
+                <tr>
+                    <td valign="top" style="text-align:center; padding:15px;" class="mobile-center" data-slot-container="1">
+                        <div data-slot="image">
+                            <img width="150" height="35" src="{{ getAssetUrl('themes/'~template~'/img/logo.png', null, null, true) }}">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div data-section-wrapper="1"  background="{{ getAssetUrl('themes/'~template~'/img/bg1.jpg', null, null, true) }}" bgcolor="#64594b" valign="top" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url({{ getAssetUrl('themes/'~template~'/img/bg1.jpg', null, null, true) }}) no-repeat center; background-color: #64594b; background-position: center 70%;">
+        <center>
+            <table data-section="1" cellspacing="0" cellpadding="0" width="" height="303" class="w320">
+                <tr>
+                    <td valign="middle" style="vertical-align:middle; padding-right: 15px; padding-left: 15px; text-align:left;" class="mobile-center" height="303" data-slot-container="1">
+                        <div data-slot="text">
+                            <h1 style="color: #ffffff">WE CAN CHANGE THE TITIL HERE</h1><br>
+                            <h2 style="color: #ffffff">CHANGE THE SUBTITILE HERE</h2>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <br>
+    <div data-section-wrapper="1">
+        <center>
+            <table data-section="1" cellspacing="0" cellpadding="30" width="" class="w290">
+                <tr>
+                    <td valign="top" data-slot-container="1">
+                        <div data-slot="text">
+                            <h3 style="text-align:center;">Edit this title here</h3>
+                            <br>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table data-section="1" cellspacing="0" cellpadding="8" width="" class="w320">
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td class="mobile-padding" style="text-align:left;" data-slot-container="1">
+                                    <div data-slot="text">
+                                       Insert information or form here
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+         
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="25" width="100%">
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div data-section-wrapper="1" style="background-color:#c2c2c2;">
+        <center>
+            <table data-section="1" cellspacing="0" cellpadding="0" width="" class="w320">
+                <tr>
+                    <td>
+                        <center>
+                            <table style="margin:0 auto;" cellspacing="0" cellpadding="5" width="100%">
+                                <tr>
+                                    <td style="text-align:center; margin:0 auto; padding-top:15px;" width="100%" data-slot-container="1">
+                                        <div data-slot="image">
+                                            <a href="#" style="text-align:center;">
+                                                <img style="margin:0 auto;" width="123" height="24" src="{{ getAssetUrl('themes/'~template~'/img/logo.png', null, null, true) }}" alt="logo link" />
+                                            </a>
+                                              <p style="margin-bottom: 15px; margin-top:15px; color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;">
+                                        <em>Copyright © 2018 Trends Publishing, All rights reserved.
+                                        </em>
+                                    </p>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+{% endblock %}

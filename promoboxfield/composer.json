@@ -1,0 +1,40 @@
+{
+    "name": "craftcmspromobox/promo-box-field",
+    "description": "promobox hub sponsorship",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "promoboxfield"
+    ],
+    "support": {
+        "docs": "https://github.com/YongYu123/promo-box-field/blob/master/README.md",
+        "issues": "https://github.com/YongYu123/promo-box-field/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YongYu",
+            "homepage": "https://github.com/YongYu123"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "craftcmspromobox\\promoboxfield\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "PromoBoxField",
+        "handle": "promo-box-field",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/YongYu123/promo-box-field/master/CHANGELOG.md",
+        "class": "craftcmspromobox\\promoboxfield\\PromoBoxField"
+    }
+}

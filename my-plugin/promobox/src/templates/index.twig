@@ -1,0 +1,46 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * PromoBox plugin for Craft CMS 3.x
+ *
+ * PromoBox index.twig
+ *
+ * @author    YongYu
+ * @copyright Copyright (c) 2018 YongYu
+ * @link      https://github.com/YongYu123
+ * @package   PromoBox
+ * @since     0.0.1
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("pluginspromobox\\promobox\\assetbundles\\promobox\\PromoBoxAsset") %}
+{% do view.registerAssetBundle("pluginspromobox\\promobox\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "https://github.com/YongYu123/promo-box/blob/master/README.md" %}
+
+{# The title of this CP section #}
+{% set title = "PromoBox" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('promo-box') %}
+
+{# Get a URL to an image in our AssetBundle #}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@pluginspromobox/promobox/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('promo-box') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('promo-box') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}

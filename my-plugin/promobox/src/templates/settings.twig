@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * PromoBox plugin for Craft CMS 3.x
+ *
+ * PromoBox Settings.twig
+ *
+ * @author    YongYu
+ * @copyright Copyright (c) 2018 YongYu
+ * @link      https://github.com/YongYu123
+ * @package   PromoBox
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("pluginspromobox\\promobox\\assetbundles\\promobox\\PromoBoxAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}
